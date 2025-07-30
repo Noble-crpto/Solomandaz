@@ -302,7 +302,7 @@ function setupMapInteraction() {
     if (directionsBtn) {
         directionsBtn.addEventListener('click', function() {
             // Open Google Maps with the specified address
-            const address = encodeURIComponent('15 Aba Road, GRA Phase II, Port Harcourt, Rivers State, Nigeria');
+            const address = encodeURIComponent('Slomandaz Furniture, Mile 4, Civic Center, 297 Ikwerre Rd, opposite Rumueme, New GRA, Port Harcourt 500102, Rivers');
             const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
             
             window.open(mapsUrl, '_blank');
@@ -314,7 +314,7 @@ function setupMapInteraction() {
     const mapPlaceholder = document.querySelector('.map-placeholder');
     if (mapPlaceholder) {
         mapPlaceholder.addEventListener('click', function() {
-            const address = encodeURIComponent('15 Aba Road, GRA Phase II, Port Harcourt, Rivers State, Nigeria');
+            const address = encodeURIComponent('Slomandaz Furniture, Mile 4, Civic Center, 297 Ikwerre Rd, opposite Rumueme, New GRA, Port Harcourt 500102, Rivers');
             const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
             
             window.open(mapsUrl, '_blank');

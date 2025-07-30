@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Slomandaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="shortcut icon" href="apple-touch-icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Slomandaz</a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="wishlist-btn" aria-label="Wishlist">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" aria-label="Cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.01"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="products.html">Shop</a>
+                <span>/</span>
+                <span id="productBreadcrumb">Product</span>
+            </nav>
+
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="" alt="Product Image">
+                        <button class="wishlist-toggle-large" id="wishlistBtn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="thumbnail-list" id="thumbnailList">
+                        <!-- Thumbnails will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 id="productName">Loading...</h1>
+                    <div class="product-rating">
+                        <div class="stars" id="productStars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-text" id="ratingText">(4.8) 24 reviews</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price" id="currentPrice">₦0</span>
+                        <span class="original-price" id="originalPrice" style="display: none;">₦0</span>
+                    </div>
+                    <div class="product-description" id="productDescription">
+                        <!-- Description will be populated by JavaScript -->
+                    </div>
+                    <div class="product-materials" id="productMaterials">
+                        <!-- Materials will be populated by JavaScript -->
+                    </div>
+                    <div class="product-stock" id="productStock">
+                        <span class="stock-status in-stock">In Stock</span>
+                        <span class="stock-count">8 items left</span>
+                    </div>
+                    <div class="product-options">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" id="decreaseQty">−</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn" id="increaseQty">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn btn-animate" id="addToCartBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.01"></path>
+                            </svg>
+                            Add to Cart
+                        </button>
+                        <button class="buy-now-btn btn-animate" id="buyNowBtn">Buy Now</button>
+                    </div>
+                    <div class="product-features">
+                        <div class="feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                            <span>Free shipping within Port Harcourt</span>
+                        </div>
+                        <div class="feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></span>
+                            </svg>
+                            <span>2-year warranty</span>
+                        </div>
+                        <div class="feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>30-day return policy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title">YOU MIGHT ALSO LIKE</h2>
+                <div class="products-grid" id="relatedProducts">
+                    <!-- Related products will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Slomandaz</h3>
+                    <p>Luxury Living & Design</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=chairs">Chairs</a></li>
+                        <li><a href="products.html?category=tables">Tables</a></li>
+                        <li><a href="products.html?category=sofas">Sofas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and exclusive offers</p>
+                    <form class="newsletter-signup">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Slomandaz. All rights reserved.</p>
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <span class="cursor-text"></span>
+      </div>
+      
+          
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.getElementById('main-nav');
+            const navLinks = document.querySelectorAll('.nav-list a');
+          
+            // Toggle menu
+            hamburger.addEventListener('click', () => {
+              hamburger.classList.toggle('active');
+              nav.classList.toggle('active');
+            });
+          
+            // Close menu when any link is clicked
+            navLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+              });
+            });
+          </script>
+    
+    <script>
+        const cursor = document.querySelector('.custom-cursor');
+        const cursorText = document.querySelector('.cursor-text');
+        let mouseX = 0;
+        let mouseY = 0;
+      
+        // Smooth follow
+        function animateCursor() {
+          cursor.style.left = mouseX + 'px';
+          cursor.style.top = mouseY + 'px';
+          requestAnimationFrame(animateCursor);
+        }
+      
+        document.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+      
+          // Detect light or dark section
+          const elementUnder = document.elementFromPoint(e.clientX, e.clientY);
+      
+          if (elementUnder.closest('.dark-section')) {
+            cursor.classList.remove('light');
+          } else if (elementUnder.closest('.light-section')) {
+            cursor.classList.add('light');
+          } else {
+            cursor.classList.remove('light'); // default fallback
+          }
+        });
+      
+        animateCursor();
+      
+        // Hover targets
+        const targets = document.querySelectorAll('.hover-target');
+      
+        targets.forEach((target) => {
+          target.addEventListener('mouseenter', () => {
+            const text = target.getAttribute('data-cursor-label');
+            cursorText.textContent = text;
+            cursor.classList.add('expand');
+          });
+      
+          target.addEventListener('mouseleave', () => {
+            cursorText.textContent = '';
+            cursor.classList.remove('expand');
+          });
+        });
+      </script>
+    <script src="js/app.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

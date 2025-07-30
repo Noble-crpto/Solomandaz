@@ -1,0 +1,474 @@
+/* About Page Styles */
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-hero .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.about-hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-hero .hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.about-hero .hero-text {
+    text-align: center;
+    color: var(--white);
+    max-width: 600px;
+}
+
+.about-hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-hero p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Brand Story Section */
+.brand-story {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--charcoal);
+}
+
+.story-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+.story-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Values Section */
+.values {
+    padding: 6rem 0;
+    background: var(--primary-bg);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: var(--light-gray);
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    color: var(--mocha);
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+}
+
+.value-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+/* Founder Section */
+.founder {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.founder-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.founder-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.founder-text blockquote {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+    font-style: italic;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.founder-text blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--mocha);
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+    font-family: serif;
+}
+
+.founder-text cite {
+    display: block;
+    font-style: normal;
+}
+
+.founder-text cite strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--charcoal);
+}
+
+.founder-text cite span {
+    color: var(--dark-gray);
+}
+
+/* Experience Section */
+.experience {
+    padding: 6rem 0;
+    background: var(--primary-bg);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.experience-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.experience-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--mocha);
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.experience-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+}
+
+.experience-item p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Statistics Section */
+.statistics {
+    padding: 4rem 0;
+    background: var(--charcoal);
+    color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--champagne);
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.about-cta {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-btn {
+    background: var(--charcoal);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cta-btn:hover {
+    background: var(--mocha);
+    transform: translateY(-2px);
+}
+
+.cta-btn-outline {
+    background: transparent;
+    color: var(--mocha);
+    border: 2px solid var(--mocha);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cta-btn-outline:hover {
+    background: var(--mocha);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .story-content,
+    .founder-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .founder-content {
+        text-align: center;
+    }
+    
+    .founder-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .story-text h2 {
+        font-size: 2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .value-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn,
+    .cta-btn-outline {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .story-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .founder-text blockquote {
+        font-size: 1.2rem;
+    }
+    
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Parallax effect */
+.parallax .hero-image {
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+
+/* Loading animations */
+.brand-story.loading {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.brand-story.loaded {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease;
+}
+
+/* Value card stagger effect */
+.value-card:nth-child(1) { animation-delay: 0.1s; }
+.value-card:nth-child(2) { animation-delay: 0.2s; }
+.value-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Experience item stagger effect */
+.experience-item:nth-child(1) { animation-delay: 0.1s; }
+.experience-item:nth-child(2) { animation-delay: 0.2s; }
+.experience-item:nth-child(3) { animation-delay: 0.3s; }
+.experience-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Stat counter animation */
+.stat-number {
+    counter-reset: stat-counter;
+    animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+    from {
+        counter-increment: stat-counter 0;
+    }
+    to {
+        counter-increment: stat-counter var(--target-number);
+    }
+}

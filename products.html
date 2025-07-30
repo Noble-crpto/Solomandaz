@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Slomandaz Luxury Living & Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="shortcut icon" href="apple-touch-icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Slomandaz</a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="active">Shop</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="wishlist-btn" aria-label="Wishlist">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" aria-label="Cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.01"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Collection</h1>
+                <p>Discover luxury furniture pieces that transform your living space</p>
+            </div>
+        </div>
+
+        <div class="products-section">
+            <div class="container">
+                <div class="products-layout">
+                    <aside class="filters-sidebar">
+                        <div class="filters-header">
+                            <h3>Filters</h3>
+                            <button class="clear-filters">Clear All</button>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Category</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="chairs" name="category">
+                                    <span>Chairs</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="tables" name="category">
+                                    <span>Tables</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="sofas" name="category">
+                                    <span>Sofas</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="beds" name="category">
+                                    <span>Beds</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="lamps" name="category">
+                                    <span>Lamps</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="storage" name="category">
+                                    <span>Storage</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Material</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="wood" name="material">
+                                    <span>Wood</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="leather" name="material">
+                                    <span>Leather</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="fabric" name="material">
+                                    <span>Fabric</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="metal" name="material">
+                                    <span>Metal</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="glass" name="material">
+                                    <span>Glass</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Price Range</h4>
+                            <div class="price-range">
+                                <input type="range" id="priceRange" min="0" max="1000000" step="10000" value="1000000">
+                                <div class="price-labels">
+                                    <span>₦0</span>
+                                    <span id="maxPrice">₦1,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="products-main">
+                        <div class="products-toolbar">
+                            <div class="products-count">
+                                <span id="productsCount">24 products</span>
+                            </div>
+                            <div class="products-sort">
+                                <select id="sortSelect">
+                                    <option value="newest">Newest</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="name">Name: A to Z</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="products-grid" id="productsGrid">
+                            <!-- Products will be dynamically loaded here -->
+                        </div>
+
+                        <div class="pagination">
+                            <button class="pagination-btn" id="prevPage" disabled>Previous</button>
+                            <div class="page-numbers" id="pageNumbers"></div>
+                            <button class="pagination-btn" id="nextPage">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Slomandaz</h3>
+                    <p>Luxury Living & Design</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=chairs">Chairs</a></li>
+                        <li><a href="products.html?category=tables">Tables</a></li>
+                        <li><a href="products.html?category=sofas">Sofas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and exclusive offers</p>
+                    <form class="newsletter-signup">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Slomandaz. All rights reserved.</p>
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

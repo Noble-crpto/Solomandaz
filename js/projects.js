@@ -285,9 +285,9 @@ if (typeof showNotification === 'undefined') {
         area: "550 sqm",
         description: "A stunning modern penthouse transformation featuring contemporary luxury furniture and sophisticated design elements. This project showcases our ability to create cohesive, elegant living spaces that combine comfort with style.",
         images: [
-            "https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg",
-            "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-            "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg"
+            "Soloimgs/3d-room-interior-with-classic-design-furniture.jpg",
+            "Soloimgs/comfortable-armchair-room-decorated.jpg",
+            "Soloimgs/modern-villa-with-multiple-lights-sun-loungers-asprovalta-greece.jpg"
         ]
     },
     project1: {
@@ -299,9 +299,9 @@ if (typeof showNotification === 'undefined') {
         area: "450 sqm",
         description: "A stunning modern villa transformation featuring contemporary luxury furniture and sophisticated design elements. This project showcases our ability to create cohesive, elegant living spaces that combine comfort with style.",
         images: [
-            "https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg",
-            "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-            "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg"
+            "Soloimgs/modern-villa-with-multiple-lights-sun-loungers-asprovalta-greece.jpg",
+            "Soloimgs/kitchen.jpg",
+            "Soloimgs/dining.jpg"
         ]
     },
     project2: {
@@ -313,9 +313,9 @@ if (typeof showNotification === 'undefined') {
         area: "200 sqm",
         description: "A sophisticated executive office design that balances professionalism with comfort. Premium materials and ergonomic furniture create an environment that enhances productivity and impresses clients.",
         images: [
-            "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg",
-            "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg",
-            "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg"
+            "Soloimgs/Continental Corporate Headquarters - Hanover _ Office Snapshots.jpeg",
+            "Soloimgs/close-up-modern-chair-desk.jpg",
+            "Soloimgs/Office design.jpeg"
         ]
     },
     project3: {
@@ -327,9 +327,9 @@ if (typeof showNotification === 'undefined') {
         area: "300 sqm",
         description: "An elegant hotel lobby design that creates a memorable first impression for guests. Luxurious seating areas and sophisticated lighting design combine to create an atmosphere of refined hospitality.",
         images: [
-            "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg",
-            "https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg",
-            "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg"
+            "Soloimgs/Boutique Hotel - shahan saheed.jpeg",
+            "Soloimgs/Hotel concept rooms _ Visual mood for commercial space - Hanna Vasyliuk.jpeg",
+            "Soloimgs/lighting.jpg"
         ]
     },
     project4: {
@@ -341,9 +341,9 @@ if (typeof showNotification === 'undefined') {
         area: "280 sqm",
         description: "A breathtaking penthouse transformation featuring floor-to-ceiling windows and contemporary luxury furniture. The design maximizes natural light while creating intimate spaces for relaxation and entertainment.",
         images: [
-            "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-            "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg",
-            "https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg"
+            "Soloimgs/modern bed.jpg",
+            "Soloimgs/modern_bed-removebg-preview.png",
+            "Soloimgs/lamp.jpg"
         ]
     },
     project5: {
@@ -355,9 +355,9 @@ if (typeof showNotification === 'undefined') {
         area: "800 sqm",
         description: "A comprehensive corporate headquarters design featuring modern workspaces, collaborative areas, and executive offices. The design promotes productivity while reflecting the company's innovative culture.",
         images: [
-            "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg",
-            "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg",
-            "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg"
+            "Soloimgs/Office design (4).jpeg",
+            "Soloimgs/lighting.jpg",
+            "Soloimgs/stone clock.jpg"
         ]
     },
     project6: {
@@ -369,9 +369,9 @@ if (typeof showNotification === 'undefined') {
         area: "350 sqm",
         description: "A beautiful family home design emphasizing clean lines and functional elegance. The minimalist approach creates serene spaces that are both practical for family life and sophisticated in style.",
         images: [
-            "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg",
-            "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-            "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg"
+            "Soloimgs/blend-minimal-nordic-interior-design-with-japanese-wabi-sabi-style.jpg",
+            "Soloimgs/A minimalist front door enhances the home's exterior with its simple yet striking design_.jpeg",
+            "Soloimgs/grey-comfortable-armchair-isolated-white-background (1).jpg"
         ]
     },
     project7: {
@@ -383,9 +383,9 @@ if (typeof showNotification === 'undefined') {
         area: "150 sqm",
         description: "An upscale retail environment designed to enhance the shopping experience. Strategic furniture placement and lighting create an inviting atmosphere that encourages exploration and purchase.",
         images: [
-            "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg",
-            "https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg",
-            "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg"
+            "Soloimgs/Sofas & Couches _ Wayfair.jpeg",
+            "Soloimgs/wasabi couch.jpg",
+            "Soloimgs/flower vase.jpg"
         ]
     },
     project8: {
@@ -397,9 +397,9 @@ if (typeof showNotification === 'undefined') {
         area: "250 sqm",
         description: "An elegant restaurant interior that enhances the dining experience through thoughtful design. Custom furniture and sophisticated lighting create an atmosphere of refined dining and hospitality.",
         images: [
-            "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg",
-            "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg",
-            "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg"
+            "Soloimgs/23 Restaurant Interior Design Ideas for a Stunning Dining Experience - ElmaaIdeas_com _ Home Decor, Garden, Design & Fashion.jpeg",
+            "Soloimgs/dining.jpg",
+            "Soloimgs/flower-vase-modern-interior.jpg"
         ]
     }
 };

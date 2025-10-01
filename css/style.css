@@ -136,16 +136,16 @@ h4 {
     filter: blur(0px);
     transform: translateY(0);
   } */
-  @keyframes brandName{
+  /* @keyframes brandName{
      from{
         opacity: 0;
-    filter: blur(5px);
+    
      }
      to{
         opacity: 1;
-        filter: blur(0px);
+        
      }
-  }
+  } */
   
   /* Hide preloader */
   .hide-preloader {

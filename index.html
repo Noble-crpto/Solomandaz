@@ -521,12 +521,27 @@
       });
     });
 
-window.addEventListener('load', () => {
+    window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
-  preloader.classList.add('hide-preloader');
+  const logo = document.querySelector('.split-logo');
+  const brand = document.querySelector('.brand-name');
+  const divider = document.querySelector('.divider-line');
+
+  // Trigger animation
+  setTimeout(() => {
+    logo.classList.add('loaded');
+    brand.classList.add('loaded');
+    divider.classList.add('loaded');
+  }, 500); // Slight delay before animating
+
+  // Fade out and remove preloader
+  setTimeout(() => {
+    preloader.classList.add('hide-preloader');
+  }, 2500); // Shorter total duration
+
   setTimeout(() => {
     preloader.remove();
-  }, 500);
+  }, 3000);
 });
 
 
